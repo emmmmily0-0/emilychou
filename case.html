@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Case study — Emily Chou</title>
+<link rel="stylesheet" href="colors_and_type.css" />
+<link rel="stylesheet" href="palette-2026.css" />
+<link rel="stylesheet" href="portfolio.css" />
+<link rel="stylesheet" href="transitions.css" />
+</head>
+<body data-page="case">
+
+<div class="page-veil" id="page-veil" aria-hidden="true">
+  <div class="veil__inner">
+    <div class="veil__eq" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <p class="veil__factnum" id="veil-factnum"></p>
+    <p class="veil__fact" id="veil-fact"></p>
+  </div>
+</div>
+<div class="scroll-progress"></div>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="assets/emily-mark.png" alt="Emmmmily — Emily Chou" />
+    </a>
+    <button class="nav__menu-btn" aria-label="Menu"><span class="material-symbols-outlined">menu</span></button>
+    <nav class="nav__links">
+      <a class="nav__link" href="index.html"><span data-lang-en>Home</span><span data-lang-zh>首頁</span></a>
+      <a class="nav__link is-active" href="work.html"><span data-lang-en>Work</span><span data-lang-zh>作品</span></a>
+      
+      <span class="lang" role="group" aria-label="Language">
+        <button data-lang="en">EN</button>
+        <button data-lang="zh">中</button>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="wrap" style="padding-top:48px">
+    <a class="case-back" href="work.html"><span class="material-symbols-outlined">arrow_back</span><span data-lang-en>All work</span><span data-lang-zh>全部作品</span></a>
+
+    <!-- Header + banner + sections are rendered by case.js into #case-root -->
+    <div id="case-root" class="reveal"></div>
+
+    <!-- Fallback shown if the id is missing/unknown -->
+    <div id="case-missing" style="display:none; padding:64px 0; text-align:center">
+      <h1 class="case-title"><span data-lang-en>Project not found</span><span data-lang-zh>未找到項目</span></h1>
+      <p class="case-lead" style="margin:0 auto 28px"><span data-lang-en>That case study doesn't exist. Head back to see all my work.</span><span data-lang-zh>該案例不存在。返回查看全部作品。</span></p>
+      <a class="btn btn--filled" href="work.html"><span class="material-symbols-outlined">arrow_back</span><span data-lang-en>Back to work</span><span data-lang-zh>返回作品</span></a>
+    </div>
+  </section>
+
+  <section class="wrap section--tight" id="case-cta" style="display:none">
+    <div class="cta-band reveal">
+      <div class="cta-band__deco" style="top:-130px; right:-70px"></div>
+      <h2><span data-lang-en>Like what you see?</span><span data-lang-zh>喜歡這些作品？</span></h2>
+      <p><span data-lang-en>I'm happy to walk through the process, trade-offs, and the messy middle over a call.</span><span data-lang-zh>我很樂意通過通話，帶你了解過程、取捨與混亂的中間地帶。</span></p>
+      <a class="btn btn--filled" href="https://www.linkedin.com/in/emmmmily" target="_blank" rel="noopener"><span class="material-symbols-outlined">waving_hand</span><span data-lang-en>Get in touch</span><span data-lang-zh>取得聯繫</span></a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <a class="brand footer__wordmark" href="index.html" aria-label="Emmmmily — Emily Chou"><span class="type" data-type-text="Emmmmily" data-type-list='["Emmmmily","Fang Yu Chou","周芳伃","Emily Chou"]'>Emmmmily</span><span class="type-caret" aria-hidden="true"></span></a>
+      <p><span data-lang-en>a UI/UX designer focused on human needs.</span><span data-lang-zh>專注產品與 0→1 的 UI/UX 與交互設計師。</span></p>
+    </div>
+    <div class="footer__cols">
+      <div class="footer__col">
+        <h5><span data-lang-en>Learn More From</span><span data-lang-zh>頁面</span></h5>
+        <a href="work.html"><span data-lang-en>Work</span><span data-lang-zh>作品</span></a>
+        
+      </div>
+      <div class="footer__col">
+        <h5><span data-lang-en>Let's Connect From</span><span data-lang-zh>其他</span></h5>
+        <a href="https://www.linkedin.com/in/emmmmily" target="_blank" rel="noopener">LinkedIn</a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© <span data-year></span> Emily Chou. <span data-lang-en>All rights reserved.</span><span data-lang-zh>版權所有。</span></span>
+  </div>
+</footer>
+
+<div id="tweak-root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="accent.js"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel">
+  const CASE_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "accent": "#0A63F2"
+  }/*EDITMODE-END*/;
+  function CaseTweaks() {
+    const [t, setTweak] = useTweaks(CASE_DEFAULTS);
+    React.useEffect(() => { window.applyAccent(t.accent); }, [t.accent]);
+    return (
+      <TweaksPanel title="Tweaks">
+        <TweakSection label="Theme" />
+        <TweakColor label="Accent" value={t.accent}
+          options={['#0A63F2', '#008BAA', '#6A3DE8']}
+          onChange={(v) => setTweak('accent', v)} />
+      </TweaksPanel>
+    );
+  }
+  ReactDOM.createRoot(document.getElementById('tweak-root')).render(<CaseTweaks />);
+</script>
+<script src="work-data.js"></script>
+<script src="transitions.js"></script>
+<script src="portfolio.js"></script>
+<script src="case.js"></script>
+</body>
+</html>

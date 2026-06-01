@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>work | AI Smart Scheduling System</title>
+<link rel="stylesheet" href="colors_and_type.css" />
+<link rel="stylesheet" href="palette-2026.css" />
+<link rel="stylesheet" href="portfolio.css" />
+<link rel="stylesheet" href="transitions.css" />
+<link rel="stylesheet" href="case-scheduling.css" />
+</head>
+<body data-page="case">
+
+<div class="page-veil" id="page-veil" aria-hidden="true">
+  <div class="veil__inner">
+    <div class="veil__eq" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <p class="veil__factnum" id="veil-factnum"></p>
+    <p class="veil__fact" id="veil-fact"></p>
+  </div>
+</div>
+<div class="scroll-progress"></div>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="assets/emily-mark.png" alt="Emmmmily — Emily Chou" />
+    </a>
+    <button class="nav__menu-btn" aria-label="Menu"><span class="material-symbols-outlined">menu</span></button>
+    <nav class="nav__links">
+      <a class="nav__link" href="index.html"><span data-lang-en>Home</span><span data-lang-zh>首頁</span></a>
+      <a class="nav__link is-active" href="work.html"><span data-lang-en>Work</span><span data-lang-zh>作品</span></a>
+      
+      <span class="lang" role="group" aria-label="Language">
+        <button data-lang="en">EN</button>
+        <button data-lang="zh">中</button>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ===================== HERO ===================== -->
+  <section class="cs-wrap" style="padding-top:40px">
+    <a class="case-back" href="work.html" onclick="if(document.referrer&&history.length>1){history.back();return false;}"><span class="material-symbols-outlined">arrow_back</span><span data-lang-en>Back</span><span data-lang-zh>返回</span></a>
+
+    <div class="cs-hero reveal">
+      <span class="cs-eyebrow"><span class="material-symbols-outlined">calendar_month</span><span data-lang-en>enterprise SaaS system · product design</span><span data-lang-zh>企業SAAS · 產品設計</span></span>
+      <h1 class="cs-title"><span data-lang-en>AI Smart Scheduling System</span><span data-lang-zh>AI 智慧排程系統</span></h1>
+      <p class="cs-sub">
+        <span data-lang-en>A one-stop dynamic manpower board that collapses multi-tab, hand-maintained spreadsheet scheduling into a predictive view.</span>
+        <span data-lang-zh>將「多表對照、人工維護」的脆性試算表排程，解構收斂為「具備預判功能」的一站式動態人力看板</span>
+      </p>
+    </div>
+
+    <div class="cs-meta reveal" data-delay="1">
+      <div class="cs-meta__item">
+        <span data-lang-en>Role</span><span data-lang-zh>角色</span>
+        <b><span data-lang-en>Product Designer</span><span data-lang-zh>產品設計師</span></b>
+      </div>
+      <div class="cs-meta__item">
+        <span data-lang-en>Timeline</span><span data-lang-zh>週期</span>
+        <b><span data-lang-en>3 months · in engineering</span><span data-lang-zh>3 個月 · 工程開發中</span></b>
+      </div>
+      <div class="cs-meta__item">
+        <span data-lang-en>Scope</span><span data-lang-zh>範疇</span>
+        <b><span data-lang-en>6 Core Modules · Cross-Project Capacity</span><span data-lang-zh>6 大核心模組 · 跨專案資源配置</span></b>
+      </div>
+      <div class="cs-meta__item cs-meta__item--tools">
+        <div class="cs-tools">
+          <span class="tag"><span data-lang-en>Stakeholder interviews</span><span data-lang-zh>關鍵人訪談</span></span>
+          <span class="tag"><span data-lang-en>Thematic analysis</span><span data-lang-zh>主題分析</span></span>
+          <span class="tag">Figma</span>
+          <span class="tag">Google AI Studio</span>
+          <span class="tag"><span data-lang-en>Think-aloud testing</span><span data-lang-zh>放聲思考測試</span></span>
+        </div>
+      </div>
+    </div>
+
+    <figure class="cs-herofig reveal" data-delay="1" style="margin-bottom:0">
+      <img src="assets/sched-populated.jpg" alt="One-stop manpower overview board — team members on rows, days across columns, colour-coded project tasks" loading="lazy" />
+    </figure>
+  </section>
+
+  <!-- ===================== LAYOUT: RAIL + CONTENT ===================== -->
+  <section class="cs-wrap" style="padding-top:40px">
+    <div class="cs-layout">
+
+      <!-- LEFT MODULE RAIL -->
+      <aside class="cs-rail">
+        <p class="cs-rail__title"><span data-lang-en>Case modules</span><span data-lang-zh>案例模組</span></p>
+        <ul class="cs-rail__list">
+          <li><a class="cs-rail__link is-active" data-spy="m-overview"><span class="cs-rail__num">01</span><span class="cs-rail__label"><span data-lang-en>The Overview</span><span data-lang-zh>專案基本資訊</span></span></a></li>
+          <li><a class="cs-rail__link" data-spy="m-problem"><span class="cs-rail__num">02</span><span class="cs-rail__label"><span data-lang-en>Context &amp; Problem</span><span data-lang-zh>背景與核心挑戰</span></span></a></li>
+          <li><a class="cs-rail__link" data-spy="m-scope"><span class="cs-rail__num">03</span><span class="cs-rail__label"><span data-lang-en>Discovery &amp; MVP Scope</span><span data-lang-zh>探索與收斂</span></span></a></li>
+          <li><a class="cs-rail__link" data-spy="m-exec"><span class="cs-rail__num">04</span><span class="cs-rail__label"><span data-lang-en>Execution &amp; Tech</span><span data-lang-zh>敏捷執行與技術落地</span></span></a></li>
+          <li><a class="cs-rail__link" data-spy="m-human"><span class="cs-rail__num">05</span><span class="cs-rail__label"><span data-lang-en>Human-Centered Insight</span><span data-lang-zh>人性洞察</span></span></a></li>
+          <li><a class="cs-rail__link" data-spy="m-outcome"><span class="cs-rail__num">06</span><span class="cs-rail__label"><span data-lang-en>Deliverables &amp; Learnings</span><span data-lang-zh>專案產出與反思</span></span></a></li>
+        </ul>
+      </aside>
+
+      <!-- CONTENT -->
+      <div class="cs-content">
+
+        <!-- mobile chip bar -->
+        <div class="cs-rail__mobilebar">
+          <a class="cs-mchip is-active" data-spy="m-overview"><span class="n">01</span><span data-lang-en>Overview</span><span data-lang-zh>基本資訊</span></a>
+          <a class="cs-mchip" data-spy="m-problem"><span class="n">02</span><span data-lang-en>Problem</span><span data-lang-zh>挑戰</span></a>
+          <a class="cs-mchip" data-spy="m-scope"><span class="n">03</span><span data-lang-en>Scope</span><span data-lang-zh>範疇</span></a>
+          <a class="cs-mchip" data-spy="m-exec"><span class="n">04</span><span data-lang-en>Execution</span><span data-lang-zh>執行</span></a>
+          <a class="cs-mchip" data-spy="m-human"><span class="n">05</span><span data-lang-en>Insight</span><span data-lang-zh>洞察</span></a>
+          <a class="cs-mchip" data-spy="m-outcome"><span class="n">06</span><span data-lang-en>Outcome</span><span data-lang-zh>產出</span></a>
+        </div>
+
+        <!-- MODULE 01 — OVERVIEW -->
+        <section class="cs-module" id="m-overview">
+          <div class="reveal">
+            <div class="cs-module__num">01</div>
+            <h2 class="cs-module__title"><span data-lang-en>The Overview</span><span data-lang-zh>專案基本資訊</span></h2>
+          </div>
+          <p class="cs-summary reveal">
+            <span data-lang-en>This project bridges two critical gaps in video production scheduling: <b>brittle dynamic connectivity</b> and a <b>lack of decision foresight</b>. By decoupling and redefining the core variables : time, talent, and project timelines. I consolidated multi-table operations into a singular, automated visual dashboard. This redesign drastically minimizes the time and cognitive overhead required for resource allocation, fundamentally optimizing capacity management for the enterprise’s highest-output department.</span>
+            <span data-lang-zh>本專案旨在解決影音製作排程中「動態連動性差」與「決策缺乏預判」的痛點。我透過重新定義核心變因（時間、人員、專案），將原本破碎的跨表作業整合為一站式視覺看板，透過自動化重排引擎，將主管調配人力的時間成本降至最低，實質優化企業內部最高產值單位的資源配置</span>
+          </p>
+        </section>
+
+        <!-- MODULE 02 — CONTEXT & PROBLEM -->
+        <section class="cs-module" id="m-problem">
+          <div class="reveal">
+            <div class="cs-module__num">02</div>
+            <h2 class="cs-module__title"><span data-lang-en>Context &amp; the core problem</span><span data-lang-zh>背景與核心挑戰</span></h2>
+            <p class="cs-module__intro"><span data-lang-en>Why the business cared, and what the manager was actually fighting</span><span data-lang-zh>為什麼公司在意這件事，以及主管真正在對抗什麼</span></p>
+          </div>
+
+          <div class="reveal">
+            <h3 class="cs-h"><span data-lang-en>Business context &amp; opportunity</span><span data-lang-zh>商業背景與機會</span></h3>
+            <p class="cs-p">
+              <span data-lang-en>As AI aggressively reshapes the marketing and creative industries, the video production department remains the company’s primary cost center and operational engine. Because its operational efficiency and project margins directly dictate the enterprise's profit ceilings, optimizing this high-volume workflow represents the single highest-ROI lever in the company's entire digital transformation strategy.</span>
+              <span data-lang-zh>行銷與創意產業正被 AI 重塑，影音部門作為人力最多、業務量最大的單位，其「協作效率與專案毛利」直接決定了企業的利潤邊界。因此，優化此單位的排程流轉，是企業內部數位轉型中投資報酬率最高的。</span>
+            </p>
+          </div>
+
+          <div class="reveal">
+            <h3 class="cs-h"><span data-lang-en>What I heard in the interviews</span><span data-lang-zh>訪談中聽見的痛點</span></h3>
+            <div class="cs-pains">
+              <div class="cs-pain">
+                <div class="cs-pain__n">1</div>
+                <div>
+                  <p class="cs-pain__t"><span data-lang-en>Brittle, manual architecture</span><span data-lang-zh>排程缺乏動態連動</span></p>
+                  <p class="cs-pain__d"><span data-lang-en>Everything relied on hand-built Excel. With zero relational logic linking data points, a single project delay forced managers to manually recalculate dozens of coupled fields, turning conflict resolution into a multi-hour ordeal.</span><span data-lang-zh>一切高度仰賴手動 Excel 排程。由於缺乏關聯式邏輯，任何單一專案的時程異動，主管皆須手動調整數十個耦合欄位，衝突排解動輒耗費數小時。</span></p>
+                </div>
+              </div>
+              <div class="cs-pain">
+                <div class="cs-pain__n">2</div>
+                <div>
+                  <p class="cs-pain__t"><span data-lang-en>Multi-tab fragmentation &amp; information silos</span><span data-lang-zh>「多線對照」導致低效</span></p>
+                  <p class="cs-pain__d"><span data-lang-en>To allocate resources, managers had to constantly cross-reference "daily assignment sheets" against "project timeline files", isolated spreadsheets that made macro-level, real-time capacity planning impossible.</span><span data-lang-zh>排程時需頻繁切換對照「每日分工」、「專案時程總表」等表格，無法即時且宏觀地預判全局人力餘裕。</span></p>
+                </div>
+              </div>
+              <div class="cs-pain">
+                <div class="cs-pain__n">3</div>
+                <div>
+                  <p class="cs-pain__t"><span data-lang-en>Reactive decision-making &amp; zero predictive insight</span><span data-lang-zh>決策缺乏預判與成本評估</span></p>
+                  <p class="cs-pain__d"><span data-lang-en>Scheduling was entirely retroactive; resource clashes only surfaced after tasks were assigned. Managers had no way to simulate the cascading domino effect that ad-hoc inserting "Project A" would trigger across existing Projects B and C.</span><span data-lang-zh>衝突往往在任務指派出去後才浮現，無法在事前預見「安插 A 案」對既有「B 案、C 案」產生的骨牌效應。</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <figure class="cs-figure reveal">
+            <div class="cs-figure__frame cs-carousel" data-carousel>
+              <div class="cs-carousel__track">
+                <img class="cs-carousel__slide is-active" src="assets/sched-before-weekly.jpg" alt="The original hand-built Excel: a dense multi-project weekly grid colour-coded by status" loading="lazy" />
+                <img class="cs-carousel__slide" src="assets/sched-before-daily.jpg" alt="The original hand-built Excel: a dense per-person daily view colour-coded by status" loading="lazy" />
+              </div>
+              <button class="cs-carousel__btn cs-carousel__btn--prev" aria-label="Previous image"><span class="material-symbols-outlined">chevron_left</span></button>
+              <button class="cs-carousel__btn cs-carousel__btn--next" aria-label="Next image"><span class="material-symbols-outlined">chevron_right</span></button>
+              <div class="cs-carousel__dots">
+                <button class="cs-carousel__dot is-active" aria-label="Slide 1"></button>
+                <button class="cs-carousel__dot" aria-label="Slide 2"></button>
+              </div>
+            </div>
+            <figcaption><span class="num"><span data-lang-en>Before</span><span data-lang-zh>改善前</span></span><span data-lang-en>The starting point — multiple giant, manually-maintained spreadsheets cross-referencing every project, week, team member, and status at once.</span><span data-lang-zh>多張靠人工維護的巨型試算表，同時對照所有專案、週次、人員與狀態。</span></figcaption>
+          </figure>
+
+          <div class="reveal">
+            <h3 class="cs-h"><span data-lang-en>Success metrics</span><span data-lang-zh>成功指標</span></h3>
+            <p class="cs-p cs-p--muted"><span data-lang-en>Cut the time the manager spends scheduling, and reduce task-allocation problems (clashes, gaps, last-minute reshuffles).</span><span data-lang-zh>降低主管的排程時間，並減少工作分配問題（衝突、空檔、臨時重排）。</span></p>
+          </div>
+        </section>
+
+        <!-- MODULE 03 — DISCOVERY & MVP SCOPE -->
+        <section class="cs-module" id="m-scope">
+          <div class="reveal">
+            <div class="cs-module__num">03</div>
+            <h2 class="cs-module__title"><span data-lang-en>Discovery &amp; Scope Management</span><span data-lang-zh>產品探索與範疇收斂</span></h2>
+            <p class="cs-module__intro"><span data-lang-en>Refusing to blindly pile on features, defining a high-impact MVP by balancing technical feasibility with corporate psychology</span><span data-lang-zh>拒絕盲目堆疊功能，以「工程可行性」與「組織心理學」定義真正的 MVP</span></p>
+          </div>
+
+          <div class="reveal">
+            <h3 class="cs-h"><span data-lang-en>Navigating the Feature Wishlist</span><span data-lang-zh>功能發想</span></h3>
+            <p class="cs-p"><span data-lang-en>The initial project wishlist was massive: automated dispatch, real-time progress tracking, algorithmic talent-to-task matching, and a high-level KPI performance dashboard requested by leadership. To cut through the noise, I deconstructed the scheduling architecture into <b>three non-negotiable core variables: time, talent, and project constraints</b>. I then proactively initiated a three-way alignment with engineering and the CEO, leveraging these variables to drive ruthless scope management based on immediate technical realities.</span><span data-lang-zh>初始提案的願景清單涵蓋自動排程、進度追蹤、人員能力最適配演算法、以及管理階層期望的「KPI 效能監控儀表板」。我將排程功能拆解為「時間、人力、專案」三大核心變因，主動發起與工程師、CEO 的三方會議，基於現實限制進行了果斷的範疇管理。</span></p>
+          </div>
+
+          <div class="cs-callout reveal">
+            <span class="material-symbols-outlined">warning</span>
+            <p><span data-lang-en>The highest-risk feature wasn't the most technically complex, it was the KPI dashboard. I flagged that it threatened to quietly morph the platform from an <b>empowerment utility into a surveillance tool</b>, introducing psychological friction where staff would feel monitored and scored. This surveillance risk would inevitably breed perverse incentives, leading to gamed data or active systemic resistance. Creative video production relies heavily on subjective quality and nuance — factors a rigid metric cannot fairly capture. Once alignment was reached, our Phase 1 MVP prioritized the manager’s acute operational bottlenecks: ad-hoc rescheduling for rush inserts, centralized talent management, and streamlined project tracking.</span><span data-lang-zh>風險最高的構想是 KPI 儀表板。我指出它可能悄悄把產品從「幫助工具」變成<b>「監控工具」</b>：員工會覺得被監視、被評分，導致數據造假或主動抵抗。影音製作涉及創意與主觀品質，無法單純被數據量化。在取得共識後，第一階段 MVP 專注於主管最痛苦的「急單插入動態重排、一站式人員管理，與專案進度追蹤」。</span></p>
+          </div>
+
+          <div class="reveal">
+            <p class="cs-p"><span data-lang-en>Nevertheless, I envisioned a much healthier long-term evolution: utilizing performance signals to surface predictive <em>delivery risks</em>, such as on-time probabilities or historical rejection rates, enabling the system to algorithmically match the most resilient talent to the right task. In other words, data modeling could eventually form a valuable <b>sub-component</b> of a holistic KPI evaluation, but it should never be used as an absolute, automated scorecard for human creativity.</span><span data-lang-zh>即便如此，我仍看見一個更健康的未來版本：用績效訊號呈現<em>交付風險</em>（準時機率、退件機率），讓系統自動為任務媒合適合的人。換言之，它也許有天能提供 KPI 的<b>一部分</b>樣貌，但絕不該直接為人打分。</span></p>
+          </div>
+
+          <div class="cs-scope reveal">
+            <div class="cs-scope__col cs-scope__col--in">
+              <div class="cs-scope__h"><span class="material-symbols-outlined">check_circle</span><span data-lang-en>In the MVP</span><span data-lang-zh>納入 MVP</span></div>
+              <ul>
+                <li><span class="material-symbols-outlined">bolt</span><span data-lang-en>Automated conflict resolution for ad-hoc rush inserts</span><span data-lang-zh>急單插入的自動重排</span></li>
+                <li><span class="material-symbols-outlined">groups</span><span data-lang-en>Talent management</span><span data-lang-zh>人員管理</span></li>
+                <li><span class="material-symbols-outlined">timeline</span><span data-lang-en>Cross-project progress monitoring</span><span data-lang-zh>專案進度管理</span></li>
+              </ul>
+            </div>
+            <div class="cs-scope__col cs-scope__col--out">
+              <div class="cs-scope__h"><span class="material-symbols-outlined">do_not_disturb_on</span><span data-lang-en>Deferred</span><span data-lang-zh>暫緩</span></div>
+              <ul>
+                <li><span class="material-symbols-outlined">query_stats</span><span data-lang-en>KPI scoring / dashboard — risk of becoming surveillance</span><span data-lang-zh>KPI 評分 / 儀表板</span></li>
+                <li><span class="material-symbols-outlined">smart_toy</span><span data-lang-en>Algorithmic talent matching — R&amp;D cost too high for v1</span><span data-lang-zh>能力自動適配</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODULE 04 — EXECUTION & TECH -->
+        <section class="cs-module" id="m-exec">
+          <div class="reveal">
+            <div class="cs-module__num">04</div>
+            <h2 class="cs-module__title"><span data-lang-en>Agile execution &amp; getting it built</span><span data-lang-zh>敏捷執行與技術落地</span></h2>
+            <p class="cs-module__intro"><span data-lang-en>Leveraging Google AI Studio for rapid prototyping, while tracing every edge case engineering would actually have to handle</span><span data-lang-zh>Google AI Studio實施快速原型，並梳理工程真正得處理的邊界邏輯</span></p>
+          </div>
+
+          <div class="reveal">
+            <h3 class="cs-h"><span data-lang-en>Rapid Prototype Validation</span><span data-lang-zh>敏捷原型驗證</span></h3>
+            <p class="cs-p"><span data-lang-en>To deconstruct and validate the architecture before burning engineering cycles, I abstracted the system into <b>6 core interactive modules</b>. Leveraging Google AI Studio, I rapidly spun up a high-fidelity dynamic prototype backed by fully operational front-end and back-end logic. I then conducted think-aloud usability testing with the video production manager, successfully refining information architecture within a tight two-week sprint.</span><span data-lang-zh>為了在投入研發資源前驗證架構，我將系統歸納為6大交互模組。我利用 Google AI Studio 快速生成具備前後端邏輯的高保真動態原型，直接邀請影音主管進行「放聲思考測試」，在2週內完成了介面資訊架構的可用性修正。</span></p>
+          </div>
+
+          <div class="cs-funcs reveal">
+            <div class="cs-func"><b><span data-lang-en>Talent management</span><span data-lang-zh>人員管理</span></b><span data-lang-en>Safely onboard, modify, and offboard team members without breaking active schedules.</span><span data-lang-zh>安全地新增、編輯與移除團隊成員。</span></div>
+            <div class="cs-func"><b><span data-lang-en>Recurrent Workflows</span><span data-lang-zh>常態性任務</span></b><span data-lang-en>Automated scheduling for fixed, cyclical weekly productions.</span><span data-lang-zh>每週固定、自動重複的任務。</span></div>
+            <div class="cs-func"><b><span data-lang-en>Ad-hoc tasks</span><span data-lang-zh>臨時性任務</span></b><span data-lang-en>Instant dynamic recalculation triggered by high-priority emergency inserts.</span><span data-lang-zh>觸發自動重排的急單。</span></div>
+            <div class="cs-func"><b><span data-lang-en>Time-Off Exclusions</span><span data-lang-zh>請假管理</span></b><span data-lang-en>Seamless leave tracking that the resource board automatically cross-checks.</span><span data-lang-zh>看板自動納入考量的請假。</span></div>
+            <div class="cs-func"><b><span data-lang-en>One-Click Handoff</span><span data-lang-zh>交接任務</span></b><span data-lang-en>Instantly reassign outstanding deliverables during team transitions.</span><span data-lang-zh>一鍵移交未完成的工作。</span></div>
+            <div class="cs-func"><b><span data-lang-en>Capacity Analytics</span><span data-lang-zh>排程分析</span></b><span data-lang-en>Predictive mapping of team bandwidth and project milestones over the coming weeks.</span><span data-lang-zh>未來數週的人力與進度分析。</span></div>
+          </div>
+
+          <div class="reveal">
+            <h3 class="cs-h"><span data-lang-en>Edge cases &amp; Architectural Logic Trees</span><span data-lang-zh>邊界條件梳理與邏輯樹</span></h3>
+            <p class="cs-p"><span data-lang-en>To ensure absolute engineering feasibility and bulletproof implementation, I meticulously mapped out extreme operational edge cases. An example is <b>fail-safe deletion barrier for team allocation:</b> the moment a manager initiates a member removal, the system automatically runs a conditional validation check. If the active work parameter evaluates above zero, the deletion sequence is physically intercepted and blocked, instantly triggering the contextual "One-Click Handoff" transition panel. I delivered these comprehensive state-machine and decision diagrams to development, entirely closing out dead ends before code was written.</span><span data-lang-zh>為了確保工程 100% 落地，我深入推導系統運行的極端情境。以「成員刪除防呆判定」為例：當主管欲移除某位團隊成員時，系統必須自動判定其「未完成任務數」。若大於零，系統將強制物理阻斷刪除操作，並即時彈出「一鍵移交任務」面板。我為此繪製了縝密的系統邏輯判定圖交付研發團隊，消滅所有操作死路。</span></p>
+          </div>
+
+          <!--<div class="cs-code reveal" aria-label="Member deletion logic">
+            <div class="cs-code__bar"><span class="material-symbols-outlined">account_tree</span><span>delete_member( ) — boundary logic</span></div>
+<pre><span class="c"># A member can only be removed once their unfinished work is cleared.</span>
+<span class="k">function</span> <span class="f">deleteMember</span>(member):
+    <span class="k">if</span> member.unfinishedTasks.length <span class="k">==</span> 0:
+        <span class="f">removeImmediately</span>(member)          <span class="c"># only completed tasks → safe to delete</span>
+    <span class="k">else</span>:
+        panel <span class="k">=</span> <span class="f">openHandoffPanel</span>(member)     <span class="c"># show "one-click handoff"</span>
+        successor <span class="k">=</span> panel.<span class="f">selectSuccessor</span>()
+        <span class="k">if</span> successor <span class="k">is</span> <span class="s">None</span>:
+            <span class="k">return</span> <span class="f">block</span>(<span class="s">"choose someone to take over first"</span>)
+        <span class="f">reassignTasks</span>(member.unfinishedTasks, successor)
+        <span class="f">removeMember</span>(member)              <span class="c"># auto-handoff, then delete</span></pre>
+          </div>-->
+
+          <div class="cs-callout reveal" style="background:var(--md-sys-color-secondary-container); color:var(--md-sys-color-on-secondary-container)">
+            <span class="material-symbols-outlined">touch_app</span>
+            <p><span data-lang-en><b>Try it.</b> The popup below is the anti-mistake design for that edge case — built straight from the Figma below. Click the delete icon.</span><span data-lang-zh><b>動手試試。</b>下方彈窗就是這個邊界情境的防呆設計，點擊刪除圖示。</span></p>
+          </div>
+
+          <!-- INTERACTIVE EDGE-CASE DEMO -->
+          <div class="cs-demo" id="cs-demo">
+            <div class="cs-demo__hd"><span class="material-symbols-outlined">swap_horiz</span><b><span data-lang-en>One-click task handoff</span><span data-lang-zh>一鍵移交任務</span></b></div>
+            <p class="cs-demo__note"><span data-lang-en>This member still has an unfinished task — deleting them triggers the handoff guard rather than losing the work.</span></p>
+            <div class="cs-demo__stage">
+              <div class="cs-member">
+                <div class="cs-member__av">M</div>
+                <div class="cs-member__meta">
+                  <b><span data-lang-en>Ming-hsi</span><span data-lang-zh>明熙</span></b>
+                </div>
+                <span class="cs-member__badge"><span data-lang-en>1 unfinished</span><span data-lang-zh>1 項未完成</span></span>
+                <button class="cs-member__del" aria-label="Delete member"><span class="material-symbols-outlined">delete</span></button>
+              </div>
+
+              <div class="cs-pop">
+                <div class="cs-pop__hd">
+                  <span class="material-symbols-outlined">swap_horiz</span>
+                  <b><span data-lang-en>One-click task handoff</span><span data-lang-zh>一鍵移交任務</span></b>
+                  <button aria-label="Close"><span class="material-symbols-outlined">close</span></button>
+                </div>
+                <div class="cs-pop__warn">
+                  <span class="material-symbols-outlined">error</span>
+                  <p><span data-lang-en>About to remove <b>Ming-hsi</b>. This member still has 1 unfinished task. Choose a successor and the system will hand it over, then remove them.</span><span data-lang-zh>即將刪除 <b>明熙</b>。該成員尚有 1 項未完成任務。請選擇接手人員，系統將自動移交並刪除原成員。</span></p>
+                </div>
+                <div class="cs-pop__field">
+                  <label><span data-lang-en>Choose a successor</span><span data-lang-zh>選擇接手人員</span></label>
+                  <div class="cs-pop__select-wrap">
+                    <select class="cs-pop__select is-placeholder" aria-hidden="true" style="display:none">
+                      <option value="" data-en="Click to choose" data-zh="點擊選擇">點擊選擇</option>
+                      <option value="ya" data-en="Ya-hsuan" data-zh="亞軒 · Ya-hsuan">亞軒 · Ya-hsuan</option>
+                      <option value="qing" data-en="Ching-wen" data-zh="慶文 · Ching-wen">慶文 · Ching-wen</option>
+                      <option value="bing" data-en="Ping-hsi" data-zh="秉熙 · Ping-hsi">秉熙 · Ping-hsi</option>
+                    </select>
+                    <div class="cs-csel is-placeholder" tabindex="0" role="combobox" aria-expanded="false" aria-haspopup="listbox">
+                      <span class="cs-csel__val" data-en="Click to choose" data-zh="點擊選擇">點擊選擇</span>
+                      <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                    <ul class="cs-csel__list" role="listbox">
+                      <li data-value="ya" data-en="Ya-hsuan" data-zh="亞軒 · Ya-hsuan" role="option" tabindex="-1">亞軒 · Ya-hsuan</li>
+                      <li data-value="qing" data-en="Ching-wen" data-zh="慶文 · Ching-wen" role="option" tabindex="-1">慶文 · Ching-wen</li>
+                      <li data-value="bing" data-en="Ping-hsi" data-zh="秉熙 · Ping-hsi" role="option" tabindex="-1">秉熙 · Ping-hsi</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cs-pop__task">
+                  <b><span data-lang-en>Task to hand off · EP.1 edit</span><span data-lang-zh>待移交任務 · EP.1 剪輯</span></b>
+                  <span>2026-03-30</span>
+                </div>
+                <div class="cs-pop__actions">
+                  <button class="btn btn--text" data-demo="cancel" style="flex:1"><span data-lang-en>Cancel</span><span data-lang-zh>取消</span></button>
+                  <button class="btn btn--filled" data-demo="confirm" style="flex:1" disabled><span class="material-symbols-outlined">check</span><span data-lang-en>Hand off &amp; remove</span><span data-lang-zh>確認移交並刪除</span></button>
+                </div>
+              </div>
+
+              <div class="cs-toast">
+                <span class="material-symbols-outlined">task_alt</span>
+                <span data-lang-en>Task handed off · member removed</span><span data-lang-zh>任務已移交 · 成員已刪除</span>
+              </div>
+            </div>
+          </div>
+
+          <figure class="cs-figure reveal" style="margin-top:30px">
+            <div class="cs-figure__frame cs-carousel" data-carousel>
+              <div class="cs-carousel__track">
+                <img class="cs-carousel__slide is-active" src="assets/sched-logic-people.jpg" alt="Figma logic diagram for member management, including the one-click handoff branch when a member holds unfinished tasks" loading="lazy" />
+                <img class="cs-carousel__slide" src="assets/sched-logic-people2.jpg" alt="Figma logic diagram continued — detailed branching rules for the one-click handoff flow" loading="lazy" />
+              </div>
+              <button class="cs-carousel__btn cs-carousel__btn--prev" aria-label="Previous image"><span class="material-symbols-outlined">chevron_left</span></button>
+              <button class="cs-carousel__btn cs-carousel__btn--next" aria-label="Next image"><span class="material-symbols-outlined">chevron_right</span></button>
+              <div class="cs-carousel__dots">
+                <button class="cs-carousel__dot is-active" aria-label="Slide 1"></button>
+                <button class="cs-carousel__dot" aria-label="Slide 2"></button>
+              </div>
+            </div>
+            <figcaption><span class="num">Figma</span><span data-lang-en>The system state architecture and talent provisioning logic tree delivered to engineering: mapping onboarding, modification, and offboarding sequences alongside explicit contextual handoff branches and validation criteria.</span><span data-lang-zh>交付給工程的人員管理邏輯圖：新增 / 編輯 / 移除，並明確標出移交分支與其判定規則。</span></figcaption>
+          </figure>
+        </section>
+
+        <!-- MODULE 05 — HUMAN-CENTERED INSIGHT -->
+        <section class="cs-module" id="m-human">
+          <div class="reveal">
+            <div class="cs-module__num">05</div>
+            <h2 class="cs-module__title"><span data-lang-en>Human-centered insight</span><span data-lang-zh>人性洞察</span></h2>
+          </div>
+
+          <div class="reveal">
+            <p class="cs-p cs-p--muted"><span data-lang-en>The definitive product takeaway: in enterprise automation, strategic positioning is the product. The exact same systemic capability, when framed as an automated "evaluator", triggers organizational gridlock and collective resistance; yet when framed as an administrative "load reducer", it secures frictionless adoption and team trust.</span><span data-lang-zh>對於企業內部 AI 效率工具而言，「定位本身就是產品」。同一個功能，被定義為「評判」就會遭到全體抵抗；被定義為「減少負重」，就會獲得全面接納。</span></p>
+          </div>
+        </section>
+
+        <!-- MODULE 06 — DELIVERABLES & LEARNINGS -->
+        <section class="cs-module" id="m-outcome">
+          <div class="reveal">
+            <div class="cs-module__num">06</div>
+            <h2 class="cs-module__title"><span data-lang-en>Deliverables &amp; learnings</span><span data-lang-zh>專案產出與反思</span></h2>
+          </div>
+
+          <div class="reveal">
+            <h3 class="cs-h"><span data-lang-en>What I delivered</span><span data-lang-zh>最終交付物</span></h3>
+            <p class="cs-p"><span data-lang-en>A comprehensive suite of system-logic engineering schematics coupled with a high-fidelity interactive prototype, delivered ready for production engineering. The board utilizes a zero-state dashboard architecture that dynamically populates and self-corrects as active projects are initialized.</span><span data-lang-zh>一套清晰的系統邏輯工程圖，加上一個高保真互動原型，交付給工程團隊的看板一開始是全空的，隨著專案被加入而逐漸填滿。</span></p>
+          </div>
+
+          <div class="cs-compare reveal">
+            <div class="cs-compare__pane">
+              <span class="cs-compare__tag cs-compare__tag--before"><span data-lang-en>Empty state</span><span data-lang-zh>空白狀態</span></span>
+              <div class="cs-compare__frame"><img src="assets/sched-empty.jpg" alt="The scheduling board with no projects yet — a calm empty state" loading="lazy" /></div>
+              <p class="cs-compare__cap"><span data-lang-en>Day one: a calm, legible empty board.</span><span data-lang-zh>第一天：一張從容、易讀的空白看板。</span></p>
+            </div>
+            <div class="cs-compare__pane">
+              <span class="cs-compare__tag cs-compare__tag--after"><span data-lang-en>In use</span><span data-lang-zh>使用中</span></span>
+              <div class="cs-compare__frame"><img src="assets/sched-populated.jpg" alt="The same board populated with colour-coded project tasks across the team" loading="lazy" /></div>
+              <p class="cs-compare__cap"><span data-lang-en>With projects: one glance shows capacity and load.</span><span data-lang-zh>有專案後：一眼看盡人力與負載。</span></p>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <h3 class="cs-h"><span data-lang-en>Impact &amp; and status</span><span data-lang-zh>成果與現況</span></h3>
+            <p class="cs-p"><span data-lang-en>While the system undergoes active engineering development, the design architecture has already achieved a profound <b>mental-model paradigm shift</b> prior to formal deployment. Following the initial prototype evaluation, the production manager voluntarily <b>rebuilt entire operational Excel framework around the exact information architecture I introduced</b>. When a user goes out of their way to manually replicate your structural logic to optimize their legacy tools, it delivers the ultimate pre-launch validation: the product model has already captured the user's psychological defaults.</span><span data-lang-zh>系統目前正處於研發階段，但在尚未正式上線前，設計已實質啟發了用戶的「心智模型轉變」。參與測試的影音主管在看過我重構的一站式視覺看板後，<b>參考我的 UI 資訊架構，重構了原本混亂的 Excel 表</b>。當使用者開始主動依據你的設計架構來優化他們的既有工具時，這個產品模型在「心智層面」就已經成功一半。</span></p>
+          </div>
+
+          <div class="cs-signals reveal">
+            <div class="cs-signal"><b data-count="6">0</b><span data-lang-en>Core interactive modules validated</span><span data-lang-zh>種核心功能的原型及邏輯判定工程圖</span></div>
+            <div class="cs-signal"><b data-count="3">0</b><span data-lang-en>Non-negotiable architectural variables : time · talent · project</span><span data-lang-zh>種不可妥協的排程變因：時間、人力、專案</span></div>
+          </div>
+
+          <figure class="cs-figure reveal" style="margin-top:30px">
+            <div class="cs-figure__frame cs-carousel" data-carousel>
+              <div class="cs-carousel__track">
+                <img class="cs-carousel__slide is-active" src="assets/sched-excel-revised.png" alt="The manager's own Excel, reworked into per-person daily rows after seeing the prototype" loading="lazy" />
+                <img class="cs-carousel__slide" src="assets/sched-populated.jpg" alt="" loading="lazy" />
+              </div>
+              <button class="cs-carousel__btn cs-carousel__btn--prev" aria-label="Previous image"><span class="material-symbols-outlined">chevron_left</span></button>
+              <button class="cs-carousel__btn cs-carousel__btn--next" aria-label="Next image"><span class="material-symbols-outlined">chevron_right</span></button>
+              <div class="cs-carousel__dots">
+                <button class="cs-carousel__dot is-active" aria-label="Slide 1"></button>
+                <button class="cs-carousel__dot" aria-label="Slide 2"></button>
+              </div>
+            </div>
+            <figcaption><span class="num"><span data-lang-en>Validation</span><span data-lang-zh>驗證</span></span><span data-lang-en>The manager’s spreadsheet following my prototype evaluation, restructured by hand to replicate the per-user, daily timeline layout introduced by my design interface.</span><span data-lang-zh>檢核後主管的試算表：手動把它重組成我介面所引入的「逐人每日列」結構。</span></figcaption>
+          </figure>
+
+          <div class="reveal">
+            <h3 class="cs-h"><span data-lang-en>Next steps &amp; reflection</span><span data-lang-zh>未來展望與個人反思</span></h3>
+            <div class="cs-next">
+              <p data-lang-en>If time and resources permit, my long-term evolutionary roadmap shifts the platform's core value proposition: elevating it from an operational workflow utility into the enterprise’s predictive, profit-driven decision engine.</p>
+              <p data-lang-zh>若未來資源與時間充裕，我為此系統規劃的下一階段演進藍圖，將從「流程優化工具」升級為企業的「利潤決策助理」:</p>
+              <div class="cs-next__item"><span class="material-symbols-outlined">psychology</span><p><span data-lang-en>Develop a dynamic talent profile matrix—incorporating creative style tags, historical client rejection rates, and milestone compliance vectors — to power an algorithmic talent-to-task matching engine. By automatically synthesizing past performance telemetry, the system will programmatically surface the highest-efficiency capacity combinations for leadership.</span><span data-lang-zh>建立更細緻的後台人員動態資料庫（如：風格標籤、過往退件率、歷史準時率等變因）。透過演算法進行「能力—任務」的最適配推薦，由系統自動抓取人員績效數值，輔助主管判定最高效的排程組合。</span></p></div>
+              <div class="cs-next__item"><span class="material-symbols-outlined">payments</span><p><span data-lang-en>Embed contract values and gross-margin variables directly into the system's underlying data model. When an ad-hoc rush job is injected, the engine won't just flag a timeline collision — it will instantly execute a predictive trade-off simulation: "Inserting Project A delays Project B by 48 hours, but increases cross-project gross yield by 15%." This equips managers with quantified business intelligence to maximize margin efficiency with every scheduling permutation.</span><span data-lang-zh>將「專案金額與毛利預估」納入系統底層模型。當急單強制安插時，系統將不只跳出時間防呆，更能即時幫主管計算出：「安插 A 案雖然會導致 B 案延誤兩天，但整體跨專案總利潤能提升 15%」 的量化商業數據，實現決策利潤的極大化。</span></p></div>
+              <div class="cs-next__item"><span class="material-symbols-outlined">trending_up</span><p><span data-lang-en>Transitioning the system from passive visibility and task assignment to predictive cost modeling and margin maximization — unlocking the true operational ceiling of the enterprise.</span><span data-lang-zh>從「看見進度與分工」走向「計算成本、極大化利潤」。</span></p></div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+  <div style="height:48px"></div>
+
+  <section class="cs-wrap">
+    <nav class="cs-pager reveal" aria-label="Project navigation">
+      <a class="cs-pager__item cs-pager__item--prev" href="case-roo.html">
+        <span class="cs-pager__dir"><span class="material-symbols-outlined">arrow_back</span><span data-lang-en>Previous project</span><span data-lang-zh>上一個專案</span></span>
+        <span class="cs-pager__title"><span data-lang-en>Roo</span><span data-lang-zh>Roo</span></span>
+      </a>
+      <a class="cs-pager__item cs-pager__item--next" href="case-erp.html">
+        <span class="cs-pager__dir"><span data-lang-en>Next project</span><span data-lang-zh>下一個專案</span><span class="material-symbols-outlined">arrow_forward</span></span>
+        <span class="cs-pager__title"><span data-lang-en>B2B ERP Experience Redesign</span><span data-lang-zh>企業 B2B ERP 體驗重構</span></span>
+      </a>
+    </nav>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <a class="brand footer__wordmark" href="index.html" aria-label="Emmmmily — Emily Chou"><span class="type" data-type-text="Emmmmily" data-type-list='["Emmmmily","Fang Yu Chou","周芳伃","Emily Chou"]'>Emmmmily</span><span class="type-caret" aria-hidden="true"></span></a>
+      <p><span data-lang-en>a UI/UX designer Architects Business-Minded Systems</span><span data-lang-zh>架構商業系統的 UI/UX 設計師</span></p>
+    </div>
+    <div class="footer__cols">
+      <div class="footer__col">
+        <h5><span data-lang-en>Learn More From</span><span data-lang-zh>我想了解更多</span></h5>
+        <a href="work.html"><span data-lang-en>Work</span><span data-lang-zh>作品</span></a>
+        
+      </div>
+      <div class="footer__col">
+        <h5><span data-lang-en>Let's Connect From</span><span data-lang-zh>我想聯繫</span></h5>
+        <a href="https://www.linkedin.com/in/emmmmily" target="_blank" rel="noopener">LinkedIn</a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© <span data-year></span> Emily Chou. <span data-lang-en>All rights reserved.</span><span data-lang-zh>版權所有。</span></span>
+  </div>
+</footer>
+
+<div id="tweak-root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="accent.js"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel">
+  const CASE_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "accent": "#0A63F2"
+  }/*EDITMODE-END*/;
+  function CaseTweaks() {
+    const [t, setTweak] = useTweaks(CASE_DEFAULTS);
+    React.useEffect(() => { window.applyAccent(t.accent); }, [t.accent]);
+    return (
+      <TweaksPanel title="Tweaks">
+        <TweakSection label="Theme" />
+        <TweakColor label="Accent" value={t.accent}
+          options={['#0A63F2', '#008BAA', '#6A3DE8']}
+          onChange={(v) => setTweak('accent', v)} />
+      </TweaksPanel>
+    );
+  }
+  ReactDOM.createRoot(document.getElementById('tweak-root')).render(<CaseTweaks />);
+</script>
+<script src="transitions.js"></script>
+<script src="portfolio.js"></script>
+<script src="case-scheduling.js"></script>
+</body>
+</html>

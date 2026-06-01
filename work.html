@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FYC | Work</title>
+<link rel="stylesheet" href="colors_and_type.css" />
+<link rel="stylesheet" href="palette-2026.css" />
+<link rel="stylesheet" href="portfolio.css" />
+<link rel="stylesheet" href="transitions.css" />
+</head>
+<body data-cards="elevated">
+
+<div class="page-veil" id="page-veil" aria-hidden="true">
+  <div class="veil__inner">
+    <div class="veil__eq" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <p class="veil__factnum" id="veil-factnum"></p>
+    <p class="veil__fact" id="veil-fact"></p>
+  </div>
+</div>
+<div class="scroll-progress"></div>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="assets/emily-mark.png" alt="Emmmmily — Emily Chou" />
+    </a>
+    <button class="nav__menu-btn" aria-label="Menu"><span class="material-symbols-outlined">menu</span></button>
+    <nav class="nav__links">
+      <a class="nav__link" href="index.html"><span data-lang-en>Home</span><span data-lang-zh>首頁</span></a>
+      <a class="nav__link is-active" href="work.html"><span data-lang-en>Work</span><span data-lang-zh>作品</span></a>
+      
+      <span class="lang" role="group" aria-label="Language">
+        <button data-lang="en">EN</button>
+        <button data-lang="zh">中</button>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="wrap" style="padding-top:64px">
+    <p class="eyebrow reveal"><span data-lang-en>Selected work</span><span data-lang-zh>精選作品</span></p>
+    <h1 class="section-title" data-text-reveal data-delay="1" style="font-size:clamp(34px,5vw,56px)">
+      <span data-lang-en>From Chaos to Clarity</span>
+      <span data-lang-zh>把模糊變具體</span>
+    </h1>
+    <p class="section-lead reveal" data-delay="1">
+      <span data-lang-en>AI orchestration, enterprise tools, and spatial realms...</span>
+      <span data-lang-zh>跨越 AI 編排、企業工具與空間領域...</span>
+    </p>
+  </section>
+
+  <section class="wrap section--tight">
+    <div class="work-toolbar reveal">
+      <button class="chip is-on" data-filter="all"><span data-lang-en>All</span><span data-lang-zh>全部</span></button>
+      <button class="chip" data-filter="casestudy"><span data-lang-en>Case Study</span><span data-lang-zh>案例研究</span></button>
+      <button class="chip" data-filter="spatial"><span data-lang-en>Spatial Experience</span><span data-lang-zh>空間體驗</span></button>
+      <span class="count"></span>
+    </div>
+
+    <div class="work-grid" id="work-grid">
+      <!-- cards injected from data, but written out for direct editing -->
+      <article class="work-card reveal" data-project="scheduling" data-href="case-scheduling.html" data-cat="casestudy" tabindex="0" role="button">
+        <div class="work-card__media"><img class="work-card__cover" src="assets/sched-populated.jpg" alt="AI Smart Scheduling System — one-stop manpower board" loading="lazy" />
+          <div class="work-card__overlay"><span class="work-card__open"><span data-lang-en>Open case study</span><span data-lang-zh>查看作品</span><span class="material-symbols-outlined">north_east</span></span></div></div>
+        <div class="work-card__body">
+          <span class="work-card__cat"><span data-lang-en>enterprise SaaS system · product design</span><span data-lang-zh>企業SAAS · 產品設計</span></span>
+          <h3 class="work-card__title"><span data-lang-en>AI Smart Scheduling System</span><span data-lang-zh>AI 智慧排程系統</span></h3>
+          <p class="work-card__desc"><span data-lang-en>One-stop visual portal that turns multi-tab Excel hell into predictive capacity management.</span><span data-lang-zh>一站式視覺管理系統將主管從多分頁的 Excel 地獄噩夢中解救出來。</span></p>
+          <div class="work-card__tags"><span class="tag tag--accent">2026</span><span class="tag"><span data-lang-en>Product designer</span><span data-lang-zh>產品設計師</span></span></div>
+        </div>
+      </article>
+
+      <article class="work-card reveal" data-delay="1" data-project="erp" data-href="case-erp.html" data-cat="casestudy" tabindex="0" role="button">
+        <div class="work-card__media"><img class="work-card__cover work-card__cover--contain" src="assets/erp-cover.png" alt="B2B ERP Experience Redesign — redesigned management hub" loading="lazy" />
+          <div class="work-card__overlay"><span class="work-card__open"><span data-lang-en>Open case study</span><span data-lang-zh>查看作品</span><span class="material-symbols-outlined">north_east</span></span></div></div>
+        <div class="work-card__body">
+          <span class="work-card__cat"><span data-lang-en>enterprise SaaS system · UX research</span><span data-lang-zh>企業SAAS · 使用者體驗研究</span></span>
+          <h3 class="work-card__title"><span data-lang-en>ERP Experience Redesign</span><span data-lang-zh>企業 ERP 體驗重構</span></h3>
+          <p class="work-card__desc"><span data-lang-en>Merged redundant workflows and untangled broken mindsets so employees can log time and complete admin tasks on autopilot.</span><span data-lang-zh>合併冗餘工作流並解構錯誤的心智模型，讓員工能用最無腦的方式操作系統。</span></p>
+          <div class="work-card__tags"><span class="tag tag--accent">2026</span><span class="tag"><span data-lang-en>UI/UX designer</span><span data-lang-zh>UI/UX 設計師</span></span></div>
+        </div>
+      </article>
+
+      <article class="work-card reveal" data-delay="2" data-project="xtinct" data-href="case-xtinct.html" data-cat="spatial" tabindex="0" role="button">
+        <div class="work-card__media"><img class="work-card__cover" src="assets/xp-card.png" alt="Xtinct Park — spatial-mapped island sandbox in mixed reality" loading="lazy" />
+          <div class="work-card__overlay"><span class="work-card__open"><span data-lang-en>Open case study</span><span data-lang-zh>查看作品</span><span class="material-symbols-outlined">north_east</span></span></div></div>
+        <div class="work-card__body">
+          <span class="work-card__cat"><span data-lang-en>Apple Vision Pro · MR</span><span data-lang-zh>Apple Vision Pro · 混合實境空間體驗</span></span>
+          <h3 class="work-card__title">Xtinct Park</h3>
+          <p class="work-card__desc"><span data-lang-en>Bringing extinct giants into your living room without breaking your sofa, peer-reviewed and published at IEEE GEM 2025.</span><span data-lang-zh>在不撞壞你沙發的前提下，把滅絕的巨型生物帶進客廳，論文已獲同行評審並發表於 IEEE GEM 2025。</span></p>
+          <div class="work-card__tags"><span class="tag tag--accent">2025</span><span class="tag"><span data-lang-en>Interaction designer</span><span data-lang-zh>互動設計師</span></span></div>
+        </div>
+      </article>
+
+      <article class="work-card reveal" data-project="seathrough" data-href="case-seathrough.html" data-cat="spatial" tabindex="0" role="button">
+        <div class="work-card__media"><img class="work-card__cover" src="assets/st-card.jpg" alt="SeaThrough — a player in a Quest 3 headset reaching into an underwater scene of fish and coral" loading="lazy" />
+          <div class="work-card__overlay"><span class="work-card__open"><span data-lang-en>Open case study</span><span data-lang-zh>查看作品</span><span class="material-symbols-outlined">north_east</span></span></div></div>
+        <div class="work-card__body">
+          <span class="work-card__cat"><span data-lang-en>Meta Quest 3 · VR</span><span data-lang-zh>Meta Quest 3 · 虛擬實境空間體驗</span></span>
+          <h3 class="work-card__title">SeaThrough</h3>
+          <p class="work-card__desc"><span data-lang-en>An immersive VR dive engineered to spark marine conservation empathy, while actively fighting motion sickness.</span><span data-lang-zh>一趟旨在激發保育海洋的情感共鳴、同時對抗動態暈眩的沉浸式 VR 教育潛水。</span></p>
+          <div class="work-card__tags"><span class="tag tag--accent">2024</span><span class="tag"><span data-lang-en>Interaction designer</span><span data-lang-zh>互動設計師</span></span></div>
+        </div>
+      </article>
+
+      <article class="work-card reveal" data-delay="1" data-project="roo" data-href="case-roo.html" data-cat="casestudy" tabindex="0" role="button">
+        <div class="work-card__media"><img class="work-card__cover" src="assets/roo-card.jpg" alt="Roo — three app screens held in hand: profile, community, and contracts" loading="lazy" />
+          <div class="work-card__overlay"><span class="work-card__open"><span data-lang-en>Open case study</span><span data-lang-zh>查看作品</span><span class="material-symbols-outlined">north_east</span></span></div></div>
+        <div class="work-card__body">
+          <span class="work-card__cat"><span data-lang-en>Mobile APP · UI/UX</span><span data-lang-zh>行動應用程式 · 使用者體驗與介面設計</span></span>
+          <h3 class="work-card__title">Roo</h3>
+          <p class="work-card__desc"><span data-lang-en>Baked connections and contracts into a frictionless mobile app, letting design do the awkward boundary negotiations for teen sitters.</span><span data-lang-zh>將共同好友鏈與合約範本嵌入零阻力的雙端 App，讓設計代替年輕保母進行尷尬的權利邊界談判。</span></p>
+          <div class="work-card__tags"><span class="tag tag--accent">2024</span><span class="tag"><span data-lang-en>UI/UX designer</span><span data-lang-zh>UI/UX 設計師</span></span></div>
+        </div>
+      </article>
+    </div>
+
+    <p id="work-empty" style="display:none; text-align:center; color:var(--fg2); padding:48px 0; font:400 16px/1.5 var(--sans)">
+      <span data-lang-en>No projects in this category yet.</span><span data-lang-zh>該分類暫無項目。</span>
+    </p>
+  </section>
+
+  </main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <a class="brand footer__wordmark" href="index.html" aria-label="Emmmmily — Emily Chou"><span class="type" data-type-text="Emmmmily" data-type-list='["Emmmmily","Fang Yu Chou","周芳伃","Emily Chou"]'>Emmmmily</span><span class="type-caret" aria-hidden="true"></span></a>
+      <p><span data-lang-en>a UI/UX designer focuses on selling experiences</span><span data-lang-zh>販售體驗的 UI/UX 設計師</span></p>
+    </div>
+    <div class="footer__cols">
+      <div class="footer__col">
+        <h5><span data-lang-en>Learn More From</span><span data-lang-zh>我想了解更多</span></h5>
+        <a href="work.html"><span data-lang-en>Work</span><span data-lang-zh>作品</span></a>
+        
+      </div>
+      <div class="footer__col">
+        <h5><span data-lang-en>Let's Connect From</span><span data-lang-zh>我想聯繫</span></h5>
+        <a href="https://www.linkedin.com/in/emmmmily" target="_blank" rel="noopener">LinkedIn</a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© <span data-year></span> Emily Chou. <span data-lang-en>All rights reserved.</span><span data-lang-zh>版權所有。</span></span>
+  </div>
+</footer>
+
+<!-- ===================== TWEAKS ===================== -->
+<div id="tweak-root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="image-slot.js"></script>
+<script src="accent.js"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel">
+  const WORK_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "cards": "elevated",
+    "accent": "#0A63F2"
+  }/*EDITMODE-END*/;
+  function WorkTweaks() {
+    const [t, setTweak] = useTweaks(WORK_DEFAULTS);
+    React.useEffect(() => { document.body.dataset.cards = t.cards; }, [t.cards]);
+    React.useEffect(() => { window.applyAccent(t.accent); }, [t.accent]);
+    return (
+      <TweaksPanel title="Tweaks">
+        <TweakSection label="Work cards" />
+        <TweakRadio label="Style" value={t.cards}
+          options={['elevated', 'outlined', 'editorial']}
+          onChange={(v) => setTweak('cards', v)} />
+        <TweakSection label="Theme" />
+        <TweakColor label="Accent" value={t.accent}
+          options={['#0A63F2', '#008BAA', '#6A3DE8']}
+          onChange={(v) => setTweak('accent', v)} />
+      </TweaksPanel>
+    );
+  }
+  ReactDOM.createRoot(document.getElementById('tweak-root')).render(<WorkTweaks />);
+</script>
+<script src="work-data.js"></script>
+<script src="transitions.js"></script>
+<script src="portfolio.js"></script>
+<script src="work.js"></script>
+</body>
+</html>

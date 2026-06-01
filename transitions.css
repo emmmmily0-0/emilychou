@@ -1,0 +1,87 @@
+/* ============================================================================
+   Loading veil · page-transition wipe · scroll motion
+   Built on Material 3 tokens. Loaded after portfolio.css.
+   ============================================================================ */
+
+/* ---- Loading / transition veil ------------------------------------------- */
+.page-veil {
+  position: fixed; inset: 0; z-index: 3000;
+  background: var(--md-sys-color-surface);
+  display: grid; place-items: center;
+  transform: translateY(0);                 /* covering */
+  transition: transform .62s var(--md-sys-motion-easing-emphasized);
+  will-change: transform;
+}
+/* lifted away (revealed) */
+.page-veil.is-open { transform: translateY(-100%); pointer-events: none; }
+/* guaranteed hidden end-state — does NOT depend on the transition clock, so a
+   frozen-clock environment can never trap content behind the veil */
+.page-veil.is-gone { visibility: hidden; pointer-events: none; }
+/* a second layer that trails for a soft two-tone wipe */
+.page-veil::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--md-sys-color-surface-container-high);
+  transform: translateY(0); transition: transform .62s var(--md-sys-motion-easing-emphasized);
+  transition-delay: .06s;
+}
+.page-veil.is-open::after { transform: translateY(-100%); }
+
+.veil__inner {
+  display: flex; flex-direction: column; align-items: center; gap: 18px;
+  text-align: center; padding: 0 32px; max-width: 640px;
+  transition: opacity .35s var(--md-sys-motion-easing-standard), transform .45s var(--md-sys-motion-easing-standard);
+}
+.page-veil.is-open .veil__inner { opacity: 0; transform: translateY(-12px); }
+
+/* equalizer / waveform — the "while loading" animation */
+.veil__eq {
+  display: flex; align-items: center; justify-content: center; gap: 5px;
+  height: 52px; margin-bottom: 4px;
+}
+.veil__eq span {
+  display: block; width: 6px; height: 100%; border-radius: 3px;
+  background: var(--fg1); transform-origin: center; transform: scaleY(0.28);
+  animation: eqBar 1s var(--md-sys-motion-easing-standard) infinite;
+}
+.veil__eq span:nth-child(1) { animation-delay: -0.9s; }
+.veil__eq span:nth-child(2) { animation-delay: -0.4s; }
+.veil__eq span:nth-child(3) { animation-delay: -0.7s; }
+.veil__eq span:nth-child(4) { animation-delay: -0.2s; }
+.veil__eq span:nth-child(5) { animation-delay: -0.6s; }
+@keyframes eqBar { 0%, 100% { transform: scaleY(0.28); } 50% { transform: scaleY(1); } }
+
+.veil__factnum {
+  margin: 0; color: var(--fg1); text-wrap: balance;
+  font: 700 clamp(22px, 3vw, 30px)/1.2 var(--sans); letter-spacing: -0.3px;
+  animation: veilUp .5s var(--md-sys-motion-easing-standard) both;
+}
+.veil__fact {
+  margin: 0; color: var(--fg2); text-wrap: balance;
+  font: 400 clamp(16px, 2vw, 20px)/1.45 var(--sans); letter-spacing: -0.1px;
+  min-height: 1.45em;
+  animation: veilUp .5s var(--md-sys-motion-easing-standard) .07s both;
+}
+@keyframes veilUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* page is mid-navigation: bring the veil back down to cover */
+body.is-leaving .page-veil { transform: translateY(0); pointer-events: auto; }
+body.is-leaving .page-veil::after { transform: translateY(0); }
+body.is-leaving .page-veil .veil__inner { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .page-veil { transition: opacity .3s linear; }
+  .page-veil.is-open { transform: translateY(0); opacity: 0; }
+  .veil__eq span { animation: none; }
+}
+
+/* ---- Extra scroll-reveal directions (compose via `translate`) ------------ */
+.reveal--left  { translate: -34px 0; }
+.reveal--right { translate: 34px 0; }
+.reveal--scale { translate: 0 18px; }
+.reveal--left.is-in, .reveal--right.is-in { translate: 0 0; }
+.reveal--scale { transform: scale(.96); transition: translate .6s var(--md-sys-motion-easing-standard), transform .6s var(--md-sys-motion-easing-standard); }
+.reveal--scale.is-in { transform: scale(1); }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal--left, .reveal--right, .reveal--scale { translate: 0 0; transform: none; }
+}

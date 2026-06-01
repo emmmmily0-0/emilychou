@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FYC | Portfolio</title>
+<link rel="stylesheet" href="colors_and_type.css" />
+<link rel="stylesheet" href="palette-2026.css" />
+<link rel="stylesheet" href="portfolio.css" />
+<link rel="stylesheet" href="transitions.css" />
+</head>
+<body data-hero="split">
+
+<div class="page-veil" id="page-veil" aria-hidden="true">
+  <div class="veil__inner">
+    <div class="veil__eq" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <p class="veil__factnum" id="veil-factnum"></p>
+    <p class="veil__fact" id="veil-fact"></p>
+  </div>
+</div>
+<div class="scroll-progress"></div>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="assets/emily-mark.png" alt="Emmmmily — Emily Chou" />
+    </a>
+    <button class="nav__menu-btn" aria-label="Menu"><span class="material-symbols-outlined">menu</span></button>
+    <nav class="nav__links">
+      <a class="nav__link is-active" href="index.html"><span data-lang-en>Home</span><span data-lang-zh>首頁</span></a>
+      <a class="nav__link" href="work.html"><span data-lang-en>Work</span><span data-lang-zh>作品</span></a>
+      
+      <span class="lang" role="group" aria-label="Language">
+        <button data-lang="en">EN</button>
+        <button data-lang="zh">中</button>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero__glow" id="hero-glow" aria-hidden="true">
+      <span class="blob blob--1"><span class="blob__core"></span></span>
+      <span class="blob blob--2"><span class="blob__core"></span></span>
+      <span class="blob blob--3"><span class="blob__core"></span></span>
+    </div>
+    <div class="wrap section">
+      <div class="hero__inner">
+        <div class="hero__row">
+        <div class="hero__copy">
+          <span class="hero__avail reveal"><span class="dot" style="background-color: rgb(11, 100, 243)"></span><span data-lang-en>Open to Product Design &amp; Management roles</span><span data-lang-zh>開放產品設計與管理職缺</span></span>
+          <h1 class="hero__display hero__display--intro reveal" data-delay="1">
+            <span data-lang-en style="line-height: 1.35; font-size: 57px">Hi, I am Emily !<br /><span class="nowrap">I work on <span class="rotate" data-rotate='["user research","rapid prototyping","vibe coding","interactive design","spatial experiences design","system design","AR / VR development","information architecture","user testing"]'>user research</span></span></span>
+            <span data-lang-zh>嗨！我是周芳伃。<br /><span class="nowrap">我專注於 <span class="rotate" data-rotate='["用戶研究","快速迭代原型","AI協作編程","互動設計","空間體驗設計","系統設計","AR / VR 開發","系統架構","用戶測試"]'>用戶研究</span></span></span>
+          </h1>
+          <p class="hero__sub" data-text-reveal data-delay="2">
+            <span data-lang-en>Currently a UI/UX designer who designs system, not just screen.</span>
+            <span data-lang-zh>目前是一名 UI/UX 設計師，不只設計介面，更在於建造系統（老闆稱我為建築師 ᕦ(ò_óˇ)ᕤ 🚧）</span>
+          </p>
+          <div class="hero__cta reveal" data-delay="3">
+            <a class="btn btn--filled" href="work.html"><span class="material-symbols-outlined">arrow_forward</span><span data-lang-en>View selected work</span><span data-lang-zh>查看作品</span></a>
+            <a class="btn btn--outlined" href="https://www.linkedin.com/in/emmmmily" target="_blank" rel="noopener"><span data-lang-en>Get in touch</span><span data-lang-zh>與我聯繫</span></a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <!-- ===================== CAPABILITIES ===================== -->
+  <section class="wrap section" id="about">
+    <p class="eyebrow reveal"><span data-lang-en>What I do</span><span data-lang-zh>我專注於</span></p>
+    <h2 class="section-title" data-text-reveal data-delay="1">
+      <span data-lang-en>From finding problem to solving problem.</span>
+      <span data-lang-zh>從發現問題到解決問題。</span>
+    </h2>
+    <p class="section-lead reveal" data-delay="1" style="margin-bottom:48px">
+      <span data-lang-en>I translate human psychology into rigorous systemic logic.</span>
+      <span data-lang-zh>我把人性心理，轉化為嚴謹的系統邏輯。</span>
+    </p>
+    <div class="feature-grid">
+      <article class="feature reveal">
+        <div class="feature__ico"><span class="material-symbols-outlined">neurology</span></div>
+        <h3><span data-lang-en>AI &amp; Complex Systems</span><span data-lang-zh>AI 與複雜系統</span></h3>
+        <p><span data-lang-en>Designing for cognitive clarity. Breaking down data-heavy B2B databases and generative workflows into scenario-driven, frictionless interfaces.</span><span data-lang-zh>為認知清晰而設計。將數據密集的 B2B 資料庫與生成式工作流，轉化為場景驅動、零阻力的介面。</span></p>
+      </article>
+      <article class="feature reveal" data-delay="1">
+        <div class="feature__ico"><span class="material-symbols-outlined">rocket_launch</span></div>
+        <h3><span data-lang-en>Spatial &amp; XR Interaction</span><span data-lang-zh>空間與 XR 互動</span></h3>
+        <p><span data-lang-en>Systems beyond screens. Translating human ergonomics into intuitive spatial workflows. Specialist in architecting multi-dimensional and interactive experiences for Apple Vision Pro and Meta Quest.</span><span data-lang-zh>超越螢幕的系統設計。將人因工程轉化為直覺的空間工作流。為 Apple Vision Pro 與 Meta Quest 架構多維度人機互動體驗。</span></p>
+      </article>
+      <article class="feature reveal" data-delay="2">
+        <div class="feature__ico"><span class="material-symbols-outlined">animation</span></div>
+        <h3><span data-lang-en>Data-Driven &amp; UX Research</span><span data-lang-zh>數據驅動的體驗設計</span></h3>
+        <p><span data-lang-en>Parsing behavior into logic. Utilizing rigorous qualitative and quantitative testing to guide product scoping.</span><span data-lang-zh>將行為解析為邏輯。利用嚴密的質性與量化測試，引導產品範疇收斂。</span></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== SELECTED WORK PREVIEW ===================== -->
+  <section class="wrap section" id="work-preview">
+    <div style="margin-bottom:40px">
+      <p class="eyebrow reveal"><span data-lang-en>Selected work</span><span data-lang-zh>精選作品</span></p>
+      <h2 class="section-title" data-text-reveal data-delay="1" style="margin:0">
+        <span data-lang-en><span class="text-long">Collection of enterprise SaaS systems, spatial computing interactions, and data-driven product research.</span><span class="text-short">Enterprise system, spatial experiences, and research design.</span></span>
+        <span data-lang-zh>涵蓋企業 SaaS 系統、空間運算互動與數據驅動的產品研究</span>
+      </h2>
+    </div>
+    <div class="work-grid">
+      <a class="work-card reveal reveal--left" href="case-scheduling.html">
+        <div class="work-card__media">
+          <img class="work-card__cover" src="assets/sched-populated.jpg" alt="AI Smart Scheduling System — one-stop manpower board" loading="lazy" />
+          <div class="work-card__overlay"><span class="work-card__open"><span data-lang-en>Open case study</span><span data-lang-zh>查看作品</span><span class="material-symbols-outlined">north_east</span></span></div>
+        </div>
+        <div class="work-card__body">
+          <span class="work-card__cat">enterprise SaaS system</span>
+          <h3 class="work-card__title"><span data-lang-en>AI Smart Scheduling System</span><span data-lang-zh>AI 智慧排程系統</span></h3>
+          <p class="work-card__desc"><span data-lang-en>Rescuing managers from the nightmare of multi-tab Excel hell.</span><span data-lang-zh>將主管從多分頁的 Excel 地獄噩夢中解救出來。</span></p>
+        </div>
+      </a>
+      <a class="work-card reveal reveal--right" data-delay="1" href="case-xtinct.html">
+        <div class="work-card__media">
+          <img class="work-card__cover" src="assets/xp-card.png" alt="Xtinct Park — spatial-mapped island sandbox in mixed reality" loading="lazy" />
+          <div class="work-card__overlay"><span class="work-card__open"><span data-lang-en>Open case study</span><span data-lang-zh>查看作品</span><span class="material-symbols-outlined">north_east</span></span></div>
+        </div>
+        <div class="work-card__body">
+          <span class="work-card__cat"><span data-lang-en>Apple Vision Pro · Spatial Experience</span><span data-lang-zh>Apple Vision Pro · 空間體驗</span></span>
+          <h3 class="work-card__title">Xtinct Park</h3>
+          <p class="work-card__desc"><span data-lang-en>A mixed-reality museum on Vision Pro, published at IEEE GEM 2025.</span><span data-lang-zh>Vision Pro 上的混合實境博物館，研究論文發表於 IEEE GEM 2025。</span></p>
+        </div>
+      </a>
+    </div>
+    <div class="work-preview__footer">
+      <a class="btn btn--text reveal" data-delay="1" href="work.html"><span data-lang-en>All projects</span><span data-lang-zh>全部專案</span><span class="material-symbols-outlined">arrow_forward</span></a>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BAND ===================== -->
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <a class="brand footer__wordmark" href="index.html" aria-label="Emmmmily — Emily Chou"><span class="type" data-type-text="Emmmmily" data-type-list='["Emmmmily","Fang Yu Chou","周芳伃","Emily Chou"]'>Emmmmily</span><span class="type-caret" aria-hidden="true"></span></a>
+      <p><span data-lang-en>a UI/UX designer Steering Chaos to Clarity</span><span data-lang-zh>把模糊變具體的 UI/UX 設計師</span></p>
+    </div>
+    <div class="footer__cols">
+      <div class="footer__col">
+        <h5><span data-lang-en>Learn More From</span><span data-lang-zh>我想了解更多</span></h5>
+        <a href="work.html"><span data-lang-en>Work</span><span data-lang-zh>作品</span></a>
+        
+      </div>
+      <div class="footer__col">
+        <h5><span data-lang-en>Let's Connect From</span><span data-lang-zh>我想聯繫</span></h5>
+        <a href="https://www.linkedin.com/in/emmmmily" target="_blank" rel="noopener">LinkedIn</a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© <span data-year></span> Emily Chou. <span data-lang-en>All rights reserved.</span><span data-lang-zh>版權所有。</span></span>
+  </div>
+</footer>
+
+<!-- ===================== TWEAKS ===================== -->
+<div id="tweak-root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="image-slot.js"></script>
+<script src="accent.js"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel">
+  const HOME_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "hero": "split",
+    "accent": "#0A63F2"
+  }/*EDITMODE-END*/;
+  function HomeTweaks() {
+    const [t, setTweak] = useTweaks(HOME_DEFAULTS);
+    React.useEffect(() => { document.body.dataset.hero = t.hero; }, [t.hero]);
+    React.useEffect(() => { window.applyAccent(t.accent); }, [t.accent]);
+    return (
+      <TweaksPanel title="Tweaks">
+        <TweakSection label="Hero layout" />
+        <TweakRadio label="Style" value={t.hero}
+          options={['split', 'centered', 'editorial']}
+          onChange={(v) => setTweak('hero', v)} />
+        <TweakSection label="Theme" />
+        <TweakColor label="Accent" value={t.accent}
+          options={['#0A63F2', '#008BAA', '#6A3DE8']}
+          onChange={(v) => setTweak('accent', v)} />
+      </TweaksPanel>
+    );
+  }
+  ReactDOM.createRoot(document.getElementById('tweak-root')).render(<HomeTweaks />);
+</script>
+<script src="transitions.js"></script>
+<script src="portfolio.js"></script>
+</body>
+</html>
